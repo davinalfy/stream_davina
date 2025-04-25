@@ -43,7 +43,7 @@
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 - Lalu lakukan commit dengan pesan "P2: Jawaban Soal 6"
 
-  ![P1 Soal 6](images/P2-soal6.gif)
+  ![P2 Soal 6](images/P2-soal6.gif)
 
 **Soal 7**
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
@@ -51,3 +51,13 @@
 > Langkah 15: Memanggil addError() saat tombol ditekan, sehingga bukan angka acak yang dikirim, tapi error yang dipicu ke stream.
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 - Lalu lakukan commit dengan pesan "P2: Jawaban Soal 7".
+
+## Praktikum 3: Injeksi data ke streams
+- Jelaskan maksud kode langkah 1-3 tersebut!
+> Langkah 1: Mendeklarasikan variabel `transformer` bertipe `StreamTransformer`, tapi belum langsung diinisialisasi (`late`).
+> Langkah 2: Mengisi `transformer` dengan logika untuk memproses data stream: mengalikan nilai dengan 10, mengganti error jadi -1, dan menutup stream saat selesai.
+> Langkah 3: Menerapkan `transformer` ke stream dan mendengarkan hasilnya; jika ada data, tampilkan nilainya, jika error, tampilkan -1.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- Lalu lakukan commit dengan pesan "P3: Jawaban Soal 8".
+
+  ![P3 Soal 8](images/P3-soal8.gif)
