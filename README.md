@@ -38,7 +38,7 @@
 ## Praktikum 2: Stream controllers dan sinks
 **Soal 6**
 - Jelaskan maksud kode langkah 8 dan 10 tersebut!
-> Langkah 8: Menginisialisasi stream dan mendengarkan datanya. Saat data baru masuk, `lastNumber` diperbarui dan UI di-refresh.
+> Langkah 8: Menginisialisasi stream dan mendengarkan datanya. Saat data baru masuk, `lastNumber` diperbarui dan UI di-refresh.  
 > Langkah 10: Fungsi `addRandomNumber()` membuat angka acak 0–9, lalu mengirimkan angka tersebut ke stream lewat `addNumberToSink()`, sehingga listener pada langkah 8 akan menerima dan memprosesnya.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 - Lalu lakukan commit dengan pesan "P2: Jawaban Soal 6"
@@ -47,15 +47,15 @@
 
 **Soal 7**
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
-> Langkah 13: Fungsi addError() menambahkan error ke stream melalui sink, agar listener bisa mendeteksi dan menangani error tersebut.
+> Langkah 13: Fungsi addError() menambahkan error ke stream melalui sink, agar listener bisa mendeteksi dan menangani error tersebut.  
 > Langkah 15: Memanggil addError() saat tombol ditekan, sehingga bukan angka acak yang dikirim, tapi error yang dipicu ke stream.
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 - Lalu lakukan commit dengan pesan "P2: Jawaban Soal 7"
 
 ## Praktikum 3: Injeksi data ke streams
 - Jelaskan maksud kode langkah 1-3 tersebut!
-> Langkah 1: Mendeklarasikan variabel `transformer` bertipe `StreamTransformer`, tapi belum langsung diinisialisasi (`late`).
-> Langkah 2: Mengisi `transformer` dengan logika untuk memproses data stream: mengalikan nilai dengan 10, mengganti error jadi -1, dan menutup stream saat selesai.
+> Langkah 1: Mendeklarasikan variabel `transformer` bertipe `StreamTransformer`, tapi belum langsung diinisialisasi (`late`).  
+> Langkah 2: Mengisi `transformer` dengan logika untuk memproses data stream: mengalikan nilai dengan 10, mengganti error jadi -1, dan menutup stream saat selesai.  
 > Langkah 3: Menerapkan `transformer` ke stream dan mendengarkan hasilnya; jika ada data, tampilkan nilainya, jika error, tampilkan -1.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 - Lalu lakukan commit dengan pesan "P3: Jawaban Soal 8"
@@ -64,8 +64,8 @@
 
 ## Praktikum 4: Subscribe ke stream events
 - Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
-> Langkah 2: Saat inisialisasi, aplikasi mulai mendengarkan data dari stream, dan setiap data baru akan ditampilkan di UI.
-> Langkah 6: Langganan stream dihentikan agar tidak menerima data lagi, biasanya dilakukan saat widget dibuang (`dispose`).
+> Langkah 2: Saat inisialisasi, aplikasi mulai mendengarkan data dari stream, dan setiap data baru akan ditampilkan di UI.  
+> Langkah 6: Langganan stream dihentikan agar tidak menerima data lagi, biasanya dilakukan saat widget dibuang (`dispose`).  
 > Langkah 8: Menghasilkan angka acak dan mengirimkannya ke stream, kecuali jika stream sudah ditutup, maka akan menampilkan nilai `-1` sebagai tanda error.
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 - Lalu lakukan commit dengan pesan "P4: Jawaban Soal 9"
@@ -84,3 +84,13 @@
 - Lalu lakukan commit dengan pesan "P5: Jawaban Soal 10, 11".
 
   ![P5 Soal 11](images/P5-soal11.gif)
+  
+## Praktikum 6: StreamBuilder
+**Soal 12**
+- Jelaskan maksud kode pada langkah 3 dan 7!
+> Langkah 3: Membuat stream yang mengirim angka acak (0–9) setiap 1 detik menggunakan `Stream.periodic()`.  
+> Langkah 7: Menampilkan data dari stream ke UI secara real-time dengan `StreamBuilder`. Jika ada data, ditampilkan besar; jika error, dicetak di console.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- Lalu lakukan commit dengan pesan "P6: Jawaban Soal 12"
+
+  ![P6 Soal 12](images/P6-soal12.gif)
