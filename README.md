@@ -34,3 +34,13 @@
 - Jelaskan perbedaan menggunakan listen dan await for (langkah 9)!
 > `.listen()` digunakan untuk berlangganan stream secara terus-menerus dan bisa dihentikan/di-pause dengan kontrol `StreamSubscription`. Sementara `await for` digunakan untuk menunggu data stream satu per satu secara async, tapi tidak bisa dihentikan sementara atau di-pause secara manual.
 - Lakukan commit hasil jawaban Soal 5 dengan pesan "P1: Jawaban Soal 5"
+
+## Praktikum 2: Stream controllers dan sinks
+**Soal 6**
+- Jelaskan maksud kode langkah 8 dan 10 tersebut!
+> Langkah 8: Menginisialisasi stream dan mendengarkan datanya. Saat data baru masuk, `lastNumber` diperbarui dan UI di-refresh.
+> Langkah 10: Fungsi `addRandomNumber()` membuat angka acak 0–9, lalu mengirimkan angka tersebut ke stream lewat `addNumberToSink()`, sehingga listener pada langkah 8 akan menerima dan memprosesnya.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- Lalu lakukan commit dengan pesan "P2: Jawaban Soal 6"
+
+  ![P1 Soal 6](images/P2-soal6.gif)
