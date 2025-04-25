@@ -71,3 +71,16 @@
 - Lalu lakukan commit dengan pesan "P4: Jawaban Soal 9"
 
   ![P4 Soal 9](images/P4-soal9.gif)
+
+## Praktikum 5: Multiple stream subscriptions
+**Soal 10**
+- Jelaskan mengapa error itu bisa terjadi?
+> Error bisa terjadi karena satu stream tidak bisa didengarkan (listened) lebih dari satu kali secara default, jika stream tersebut bukan broadcast stream.
+
+**Soal 11**
+- Jelaskan mengapa hal itu bisa terjadi?
+> Dengan menambahkan `asBroadcastStream()` memungkinkan dua listener aktif, dan karena keduanya mengubah nilai values, maka setiap nilai yang masuk akan ditambahkan dua kali ke values, menghasilkan output ganda seperti 9 - 9 - 3 - 3 -.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- Lalu lakukan commit dengan pesan "P5: Jawaban Soal 10, 11".
+
+  ![P5 Soal 11](images/P5-soal11.gif)
