@@ -94,3 +94,12 @@
 - Lalu lakukan commit dengan pesan "P6: Jawaban Soal 12"
 
   ![P6 Soal 12](images/P6-soal12.gif)
+
+## Praktikum 7: BLoC Pattern
+**Soal 13**
+- Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+> Praktikum ini bertujuan untuk menerapkan pola arsitektur BLoC (Business Logic Component) di Flutter, yaitu dengan memisahkan logika bisnis dari tampilan (UI) menggunakan `Stream` dan `Sink`. Logika untuk menghasilkan angka acak ditangani oleh `RandomNumberBloc`, yang menyediakan stream sebagai output ke UI dan sink sebagai input dari UI. Ketika tombol ditekan, event dikirim ke BLoC melalui `generateRandom`, kemudian angka acak dikirim balik ke UI melalui `randomNumber`, dan `StreamBuilder` secara otomatis memperbarui tampilan.
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- Lalu lakukan commit dengan pesan "P7: Jawaban Soal 13"
+
+  ![P7 Soal 13](images/P7-soal13.gif)
