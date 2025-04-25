@@ -44,3 +44,10 @@
 - Lalu lakukan commit dengan pesan "P2: Jawaban Soal 6"
 
   ![P1 Soal 6](images/P2-soal6.gif)
+
+**Soal 7**
+- Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+> Langkah 13: Fungsi addError() menambahkan error ke stream melalui sink, agar listener bisa mendeteksi dan menangani error tersebut.
+> Langkah 15: Memanggil addError() saat tombol ditekan, sehingga bukan angka acak yang dikirim, tapi error yang dipicu ke stream.
+- Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+- Lalu lakukan commit dengan pesan "P2: Jawaban Soal 7".
