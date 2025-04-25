@@ -23,3 +23,9 @@
 - Lakukan commit hasil jawaban Soal 3 dengan pesan "P1: Jawaban Soal 3"
 
   ![P1 Soal 3](images/P1-soal3.jpg)
+
+**Soal 4**
+- Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+- Lakukan commit hasil jawaban Soal 4 dengan pesan "P1: Jawaban Soal 4"
+
+  ![P1 Soal 4](images/P1-soal4.gif)
